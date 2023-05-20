@@ -10,6 +10,11 @@ treesitter.setup({
   highlight = {
     enable = true,
   },
+  rainbow = {
+    enable = true,
+    extended_mode = true,
+    max_file_lines = nil,
+  },
   -- enable indentation
   indent = {
     enable = true,
@@ -23,9 +28,9 @@ treesitter.setup({
     "lua",
     "c",
     "cpp",
-	"rust",
-	"toml",
-	"python",
+    "rust",
+    "toml",
+    "python",
   },
   -- auto install above language parsers
   auto_install = true,

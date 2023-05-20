@@ -16,8 +16,8 @@ opt.colorcolumn = '80'
 vim.api.nvim_set_option_value("colorcolumn", "79", {})
 
 -- tabs & indentation
-opt.tabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 8
+opt.shiftwidth = 8
 opt.softtabstop = -1
 opt.expandtab = false
 opt.autoindent = true
@@ -63,6 +63,8 @@ opt.signcolumn = "yes"
 
 -- backspace
 opt.backspace = "indent,eol,start"
+vim.opt.list = true
+vim.opt.listchars = {tab = '>-', trail = '.', extends = '>', precedes = '<'}
 
 -- clipboard
 opt.clipboard:append("unnamedplus")

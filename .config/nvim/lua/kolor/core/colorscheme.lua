@@ -1,5 +1,8 @@
 -- vim.g.everforest_diagnostic_line_highlight = 1
-vim.cmd('colorscheme nightfly')
+-- vim.cmd('colorscheme vscode')
+
+vim.cmd('colorscheme dracula')
+
 vim.fn.sign_define({
   {
     name = 'DiagnosticSignError',

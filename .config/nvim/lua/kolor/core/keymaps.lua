@@ -28,6 +28,12 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
+-- buffer jumping
+keymap.set("n", "<leader>bn", ":bnext<CR>", {noremap = true, silent = true})
+keymap.set("n", "<leader>bp", ":bprevious<CR>", {noremap = true, silent = true})
+keymap.set("n", "<leader>bd", ":bp|bd #<CR>", {noremap = true, silent = true})
+keymap.set("n", "<leader>bl", ":ls<CR>", {noremap = true, silent = true})
+
 ----------------------
 -- Plugin Keybinds
 ----------------------
@@ -49,5 +55,11 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 
 --symbos-outline
 keymap.set("n", "<leader>s", "<cmd>Telescope lsp_document_symbols<cr>")
+
+
+--clipboard
+vim.keymap.set('n', '<leader>c', require('osc52').copy_operator, {expr = true})
+vim.keymap.set('n', '<leader>cc', '<leader>c_', {remap = true})
+vim.keymap.set('v', '<leader>c', require('osc52').copy_visual)
 
 

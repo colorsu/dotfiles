@@ -48,7 +48,7 @@ telescope.setup({
                                        -- the default case_mode is "smart_case"
     }
   },
-  path_display = {"truncate"}
+  path_display = {"smart"}
 })
 
 telescope.load_extension("fzf")
