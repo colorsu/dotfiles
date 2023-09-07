@@ -35,11 +35,6 @@ nvimtree.setup({
         { key = "u", action = "dir_up" },
       },
     },
-  }, log = {
-    enable = true,
-    types = {
-      diagnostics = true
-    }
   },
   diagnostics = {
     enable = true,

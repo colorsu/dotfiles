@@ -31,6 +31,8 @@ return packer.startup(function(use)
 	use("bluz71/vim-nightfly-guicolors")
 	use("Mofiqul/vscode.nvim")
 	use 'Mofiqul/dracula.nvim'
+	use 'folke/tokyonight.nvim'
+	use "rebelot/kanagawa.nvim"
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
@@ -104,7 +106,7 @@ end
 		end,
 	})
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
-	use 'j-hui/fidget.nvim'
+	use {'j-hui/fidget.nvim', tag = 'legacy'}
 
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
